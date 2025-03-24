@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * Represents a song with essential attributes.
  */
-public class Song {
+public class Song extends Media{
     private Artist singer;
     private String title;
     private int year;
@@ -27,15 +27,14 @@ public class Song {
      * @param composer The composer of the song.
      */
     public Song(String title, Artist singer, int year, int duration, String lyrics, Artist author, Artist composer) {
-        this.title = title;
+        super(title, duration, year);
         this.singer = singer;
-        this.year = year;
-        this.duration = duration;
         this.lyrics = lyrics;
         this.author = author;
         this.composer = composer;
     }
 
+    @Override
     public void play() {
         String[] paroles = lyrics.split(" ");
 
