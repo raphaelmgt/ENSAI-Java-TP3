@@ -79,5 +79,4 @@ public class Song extends Media{
     public int hashCode() {
         return Objects.hash(this.title, this.singer, this.year);
     }
-
 }
