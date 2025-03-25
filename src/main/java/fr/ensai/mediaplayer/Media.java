@@ -1,4 +1,4 @@
-package fr;
+package fr.ensai.mediaplayer;
 
 /**
 * Représente un média avec ses attributs principaux.

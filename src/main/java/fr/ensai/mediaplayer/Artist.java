@@ -1,4 +1,4 @@
-package fr;
+package fr.ensai.mediaplayer;
 
 /**
  * Represente un artiste avec ses attributs principaux.

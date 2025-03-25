@@ -1,4 +1,4 @@
-package fr;
+package fr.ensai.mediaplayer;
 
 /**
 * Permet d'introduire dix styles de musique différents.

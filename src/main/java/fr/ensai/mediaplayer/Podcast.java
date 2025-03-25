@@ -1,4 +1,5 @@
-package fr;
+package fr.ensai.mediaplayer;
+
 /**
  * Représente un podcast avec ses attributs principaux.
  */

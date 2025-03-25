@@ -1,4 +1,4 @@
-package fr;
+package fr.ensai.mediaplayer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
