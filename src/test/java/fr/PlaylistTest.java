@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,18 +15,18 @@ public class PlaylistTest {
         // GIVEN
         Artist jacques = new Artist("Jacques", "Brel", "Belgique");
         Song song = new Song(
-            "Amsterdam",
-            jacques,
-            1964,
-            180, 
-            "Dans le port d’Amsterdam\n" + //
-            "Y a des marins qui chantent\n" + //
-            "Les rêves qui les hantent\n" + //
-            "Au large d’Amsterdam\n" + //
-            "Dans le port d’Amsterdam ",
-            null,
-            null
-        );
+                "Amsterdam",
+                jacques,
+                1964,
+                180,
+                "Dans le port d’Amsterdam\n" + //
+                        "Y a des marins qui chantent\n" + //
+                        "Les rêves qui les hantent\n" + //
+                        "Au large d’Amsterdam\n" + //
+                        "Dans le port d’Amsterdam ",
+                null,
+                null,
+                Set.of(MusicalStyle.POP, MusicalStyle.CLASSICAL));
         Playlist playlist = new Playlist("Playlist-1", new ArrayList<Media>(), 0);
 
         // WHEN
@@ -40,18 +41,18 @@ public class PlaylistTest {
         // GIVEN
         Artist jacques = new Artist("Jacques", "Brel", "Belgique");
         Song song = new Song(
-            "Amsterdam",
-            jacques,
-            1964,
-            180, 
-            "Dans le port d’Amsterdam\n" + //
-            "Y a des marins qui chantent\n" + //
-            "Les rêves qui les hantent\n" + //
-            "Au large d’Amsterdam\n" + //
-            "Dans le port d’Amsterdam ",
-            null,
-            null
-        );
+                "Amsterdam",
+                jacques,
+                1964,
+                180,
+                "Dans le port d’Amsterdam\n" + //
+                        "Y a des marins qui chantent\n" + //
+                        "Les rêves qui les hantent\n" + //
+                        "Au large d’Amsterdam\n" + //
+                        "Dans le port d’Amsterdam ",
+                null,
+                null,
+                Set.of(MusicalStyle.POP, MusicalStyle.CLASSICAL));
         List<Media> medialList = new ArrayList<Media>();
         medialList.add(song);
 

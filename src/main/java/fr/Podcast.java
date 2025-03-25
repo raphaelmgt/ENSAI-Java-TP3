@@ -1,5 +1,7 @@
 package fr;
-
+/**
+ * Représente un podcast avec ses attributs principaux.
+ */
 public class Podcast extends Media {
     // Attributes
     private String title;
@@ -9,6 +11,9 @@ public class Podcast extends Media {
     private int year;
     private String subtitles;
 
+    /**
+    * Construit un nouveau podcast.
+    */
     // Constructor
     public Podcast(String title, String host, String topic, int duration, int year, String subtitles) {
         super(subtitles, duration, year);
@@ -18,6 +23,9 @@ public class Podcast extends Media {
         this.subtitles = subtitles;
     }
 
+    /**
+    * Affiche les sous-titres d'un podcast.
+    */
     @Override
     public void play() {
         String[] words = subtitles.split(" ");
@@ -34,9 +42,11 @@ public class Podcast extends Media {
             }
         }
     }
-
+    /**
+    * Représentation sous forme de chaîne de caractère d'un podcast et de son présentateur.
+    */
     @Override
     public String toString() {
-        return "Song " + this.title + " by " + this.host;
+        return "Podcast " + this.title + " by " + this.host;
     }
 }
