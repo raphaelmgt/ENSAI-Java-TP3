@@ -49,7 +49,9 @@ public class Playlist {
         if (mediaList.size() < i)
             throw new IllegalArgumentException(
                     "The playlist does not have " + i + "-th element.");
-        mediaList.remove(i);
+        Media removedMedia = mediaList.get(i);
+        mediaList.remove(removedMedia);
+        totalDuration -= removedMedia.duration;
     }
 
     /**
